@@ -1,0 +1,28 @@
+name: 'Issue Triage Bot'
+description: 'Automatically triage issues and pull requests with labels, summaries, and duplicate detection'
+author: 'Dan'
+
+branding:
+  icon: 'tag'
+  color: 'blue'
+
+inputs:
+  github-token:
+    description: 'GitHub token for API access'
+    required: true
+  config-path:
+    description: 'Path to configuration file'
+    required: false
+    default: '.github/issue-triage.yml'
+  enable-summary:
+    description: 'Enable issue summarization'
+    required: false
+    default: 'true'
+  enable-duplicate-detection:
+    description: 'Enable duplicate issue detection'
+    required: false
+    default: 'true'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
