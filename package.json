@@ -1,0 +1,30 @@
+{
+  "name": "issue-triage-bot",
+  "version": "1.0.0",
+  "description": "GitHub Action for automatic issue triage",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/index.ts -o dist --source-map --license licenses.txt",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": [
+    "github-action",
+    "issue-triage",
+    "automation",
+    "bot"
+  ],
+  "author": "Dan",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.10.0",
+    "@vercel/ncc": "^0.38.1",
+    "typescript": "^5.3.2"
+  }
+}
