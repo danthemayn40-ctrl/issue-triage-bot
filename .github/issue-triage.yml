@@ -1,0 +1,22 @@
+labels:
+  bug:
+    keywords: ['bug', 'error', 'crash', 'broken', 'fails']
+    color: 'd73a4a'
+  feature:
+    keywords: ['feature', 'enhancement', 'request', 'add']
+    color: 'a2eeef'
+  documentation:
+    keywords: ['docs', 'readme', 'documentation', 'typo']
+    color: '0075ca'
+  question:
+    keywords: ['question', 'help', 'how to', 'wonder']
+    color: 'd876e3'
+  performance:
+    keywords: ['slow', 'performance', 'memory', 'optimize']
+    color: 'fbca04'
+
+priority:
+  keywords:
+    high: ['urgent', 'critical', 'blocker', 'security', 'regression']
+    medium: ['important', 'needed']
+    low: []
