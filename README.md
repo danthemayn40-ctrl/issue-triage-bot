@@ -30,7 +30,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Triage Issue
-        uses: your-username/issue-triage-bot@v1
+        uses: danthemayn40-ctrl/issue-triage-bot@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           config-path: '.github/issue-triage.yml'
